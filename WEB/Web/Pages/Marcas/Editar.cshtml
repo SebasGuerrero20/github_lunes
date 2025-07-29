@@ -1,0 +1,20 @@
+﻿@page
+@model Web.Pages.Marcas.EditarModel
+@{
+}
+
+<h1> Editar Nombre Marca</h1>
+
+<div class="container">
+    <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto">
+        <form method="post">
+            <div class="form-group">
+                <label class="control-label" asp-for="marca.Nombre"></label>
+                <input class="form-control" asp-for="marca.Nombre" />
+                <span class="text-danger" asp-validation-for="marca.Nombre"></span>
+            </div>
+            <a class="btn btn-primary text-white" asp-page="./IndexMarcas"><i class="bi bi-arrow-left"></i></a>
+            <button type="submit" class="btn btn-success text-white"><i class="bi bi-plus-circle"></i></button>
+        </form>
+    </div>
+</div>

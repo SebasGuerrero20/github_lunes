@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Marcas]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Nombre] VARCHAR(MAX) NOT NULL
+)
