@@ -1,0 +1,22 @@
+﻿@page
+@model Web.Pages.Marcas.EliminarModel
+@{
+}
+
+
+<h1>Eliminar Marca</h1>
+
+
+<div class="container">
+    <form method="post">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelo => modelo.marca.Nombre)</h5>
+                </div>
+            </div>
+        </div>
+        <a type="button" class="btn btn-secondary" asp-page="./IndexMarcas"><i class="bi bi-arrow-left"></i></a>
+        <button type="submit" class="btn-danger">Eliminar</button>
+    </form>
+</div>

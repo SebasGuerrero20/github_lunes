@@ -1,0 +1,26 @@
+﻿@page
+@model Web.Pages.Marcas.DetalleModel
+@{
+}
+
+
+<a type="button" class="btn btn-primary text-white" asp-page="/IndexMarcas"><i class="bi bi-arrow-left"></i></a>
+<h1>Detalle de la Marca</h1>
+
+<div class="container">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelo => modelo.marca)</h5>
+                <p class="card-text">
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo => modelo.marca.Nombre):</b>
+                        @Html.DisplayFor(modelo => modelo.marca.Nombre)
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a type="button" class="btn btn-warning text-white" asp-page="./Editar" asp-route-id="@Model.marca.IdMarca"><i class="bi bi-pencil"></i></a>
+    <a type="button" class="btn btn-danger text-white" asp-page="./Eliminar" asp-route-id="@Model.marca.IdMarca"><i class="bi bi-trash"></i></a>
+</div>
